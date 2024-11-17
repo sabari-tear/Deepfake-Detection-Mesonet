@@ -5,21 +5,6 @@ This repository contains the implementation of a deepfake detection system using
 
 ---
 
-## Table of Contents
-- [Project Overview](#project-overview)
-- [Features](#features)
-- [Dataset](#dataset)
-- [Model Architecture](#model-architecture)
-- [Installation](#installation)
-- [Usage](#usage)
-  - [Training the Model](#training-the-model)
-  - [Making Predictions](#making-predictions)
-- [Results](#results)
-- [Future Work](#future-work)
-- [License](#license)
-
----
-
 ## Project Overview
 
 Deepfake content has grown exponentially with advancements in AI. This project aims to identify deepfake images using a simple yet effective convolutional neural network architecture based on MesoNet. The model was trained to distinguish between real and fake images using labeled datasets.
@@ -104,7 +89,7 @@ The implemented MesoNet architecture consists of:
    ```
 2. Example:
    ```bash
-   python predict_image.py unseen/fake/example.jpg
+   python predict_image.py unseen/fake/fake_0.jpg
    ```
 
 The output will indicate whether the image is "Fake" or "Real" along with the confidence score.
@@ -124,13 +109,3 @@ The output will indicate whether the image is "Fake" or "Real" along with the co
 - Enhance the dataset with more diverse examples to improve generalization.
 - Experiment with advanced architectures like Xception and EfficientNet for better performance.
 - Develop a web interface or browser extension for real-time detection.
-
----
-
-## License
-
-This project is open-source and available under the [MIT License](LICENSE).
-
----
-
-Feel free to contribute to the project by opening issues or submitting pull requests. Happy coding! 😊
